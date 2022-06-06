@@ -44,11 +44,9 @@
             padding: 10px;
         }
         .tab {
-            width: 100%;
             overflow: auto;
             scrollbar-base-color: goldenrod;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
-            padding: 10px;
             display: flex;
         }
         .bar {
@@ -91,13 +89,17 @@
 
     <script type="text/javascript">
         function backstorySwitch() {
-            document.getElementById('tab').src = "data:text/html,<style>.backstory{display:flex;height: 180px;width: 730px;overflow: auto;scrollbar-base-color: goldenrod;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;padding: 10px;background-color:yellow;}p{justify-content: center;}</style><div class='backstory'><p>The Fuego Ball is built around the thought of throwing a football in the cold and wintertime. The football is specifically and cautiously engineered to have a ball that heats up. This is so it can be easy to catch during the wintertime. The problem we faced creating the ball is we didn't want to make it too similar to a nerf vortex football. So using some skillful thinking we added a heater with insulation to make it more beneficial for cold weather use. This helps with theming and helps the Fuego Ball stand out from the competition.</p><p>When designing the Fuego ball we thought of how much it hurts to have a ball that is frozen and catch it with your bare hands. The sensation feels like a needle hitting your palm. wIth a heated ball, we can avoid this unsatisfying obstacle.</p><p>The placement of the whistle is a distinct part of the sophistication of the ball. It is placed in an area where the ball is thrown in a spiral. This helps players improve with aim and accuracy.</p><p>With the heating and whistle elements of the Fuego ball, it creates a distinct ball in the sports and toys market. With our appealing design and cool colors, it attracts various audiences to our product. All together this creates a fun and attractive product that can be used in all circumstances and environments.</p></div>";
-            document.getElementById('tab').width = 730;
-            document.getElementById('tab').height = 180;
+            document.getElementById('tab').src = "data:text/html,<style>.backstory{display:block;height: 180px;width: auto;overflow: auto;scrollbar-base-color: goldenrod;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;padding: 10px;background-color:yellow;}p{justify-content: center;}</style><div class='backstory'><p>The Fuego Ball is built around the thought of throwing a football in the cold and wintertime. The football is specifically and cautiously engineered to have a ball that heats up. This is so it can be easy to catch during the wintertime. The problem we faced creating the ball is we didn't want to make it too similar to a nerf vortex football. So using some skillful thinking we added a heater with insulation to make it more beneficial for cold weather use. This helps with theming and helps the Fuego Ball stand out from the competition.</p><p>When designing the Fuego ball we thought of how much it hurts to have a ball that is frozen and catch it with your bare hands. The sensation feels like a needle hitting your palm. wIth a heated ball, we can avoid this unsatisfying obstacle.</p><p>The placement of the whistle is a distinct part of the sophistication of the ball. It is placed in an area where the ball is thrown in a spiral. This helps players improve with aim and accuracy.</p><p>With the heating and whistle elements of the Fuego ball, it creates a distinct ball in the sports and toys market. With our appealing design and cool colors, it attracts various audiences to our product. All together this creates a fun and attractive product that can be used in all circumstances and environments.</p></div>";
+            document.getElementById('tab').width = "100%";
+            document.getElementById('tab').height = 210;
         }    
         backstorySwitch()
         function printadSwitch() {
             document.getElementById('tab').src = 'https://lh3.google.com/u/0/d/1tXyaOUZ7PVmN7GByii342Dxu0QE4IH1C=w1920-h927-iv1';
+            document.getElementById('tab').width = '33%';
+            document.getElementById('tab').height = 890;
+            document.getElementById('tab').overflow = auto;
+            document.getElementById('tab').align = center;
         } 
         function videoadSwitch() {
             document.getElementById('tab').src = 'https://www.youtube.com/embed/WMeCTUBuScg';
@@ -118,7 +120,7 @@
    
 
     <body>
-        <iframe align="center" id="tab" class="tab" src="https://example.com"></iframe> 
+        <div align="center"><iframe id="tab" class="tab" src="" overflow="hidden"></iframe></div> 
     </body>
 
 </html>
